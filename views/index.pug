@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Bem vindo ao #{title}
+
+  h1 Enviroments
+  ul
+    each val in envs
+      li= val.key + ' = ' + val.value
